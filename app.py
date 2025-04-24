@@ -9,7 +9,7 @@ import sys
 app = Flask(__name__)
 
 DB_CONFIG = {
-    'dbname': 'drone_imagery',
+    'dbname': 'drone_data',
     'user': 'postgres',  # REPLACE THIS WITH YOUR USERNAME
     'host': 'localhost'
 }

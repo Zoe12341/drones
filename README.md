@@ -16,7 +16,7 @@ Link to our presentation where we ran through the key aspects of our project (ac
 
 ## Files and Functionalities
 
-## How to Set-Up and Run Our Project
+## How to Set Up and Run Our Project
 
 ## Required Dependencies and Tools
 - Flask

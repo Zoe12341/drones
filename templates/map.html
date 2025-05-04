@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Map</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <style>
+        #map {
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+
+<!-- Leaflet JS -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+const map = L.map('map').setView([42.3251, -72.6412], 50); // Adjust to center near your flight data
+
+// Add OpenStreetMap tiles
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 18,
+}).addTo(map);
+
+// Fetch flight data from backend
+fetch('/api/flights')
+    .then(response => response.json())
+    .then(data => {
+        for (const [name, coords] of Object.entries(data)) {
+            const polyline = L.polyline(coords, {color: 'blue'}).addTo(map);
+            polyline.bindPopup(`<b>${name}</b>`);
+        }
+    })
+    .catch(err => console.error('Error loading flight data:', err));
+</script>
+
+</body>
+</html>

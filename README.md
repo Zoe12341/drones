@@ -7,18 +7,14 @@ We worked with a stakeholder, Kala’i Ellis, a Spatial Data Analyst at the Spat
 Link to our [presentation](https://docs.google.com/presentation/d/11lS9HENt4-R_IivPTkeSB0FKPf23oE93byotoBUc3-o/edit?usp=sharing) where we ran through the key aspects of our project (accessible to anyone at Smith College). 
 
 ## Included Files
-- `drone_search_system.ipynb`: Main application with database setup, data import, and Flask web interface
-- `drone_folders.db`: SQLite database containing the organized drone imagery metadata - created from data extracted from the source google drive path 
-- `maps.py`: Map that shows the path of each professional drone flight
-
-
+- `drones_final_search_bydate_and_map.ipynb`: Main application with database setup, data import, and Flask web interface
+- [Folder] `old files`: Includes deprecated files from our old, local setup, which uses Postgres.
 ## How to Use
 1. **Access the System**: Open the notebook in Colab and run all cells
 2. **Search Interface**:
    - Select date range (From/To)
    - Choose imagery type (All, Professional, or Personal)
    - Click "Search"
-
 
 
 
@@ -33,6 +29,18 @@ https://github.com/user-attachments/assets/b91f6bcb-5076-4ae7-bc66-edf3ad3a8d67
 3. Run all cells sequentially
 4. The web interface will automatically launch in the notebook
 5. For direct access, click the generated URL
+
+   
+
+
+
+https://github.com/user-attachments/assets/3f9bc45e-0d29-4e80-93fc-1328579b3f34
+
+
+
+
+
+
 
 ## Dependencies
 - Python 3

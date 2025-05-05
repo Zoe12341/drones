@@ -27,7 +27,7 @@ https://github.com/user-attachments/assets/b91f6bcb-5076-4ae7-bc66-edf3ad3a8d67
 1. Open `drone_search_system.ipynb` in Google Colab
 2. Replace source path to dataset Google Drive path (i.e `folder_path = '/content/drive/Shareddrives/Drones - CSC 230/10-October'`)
 3. Run all cells sequentially
-4. The web interface will automatically launch in the notebook
+4. The web interface will automatically launch in the notebook; Choose between Search by date/type and map interface
 5. For direct access, click the generated URL
 
    
